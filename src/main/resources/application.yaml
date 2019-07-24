@@ -1,9 +1,11 @@
+server:
+  port: 8080
 spring:
   cloud:
     gateway:
       routes:
         - id: test
-          uri: http://localhost:8080
+          uri: http://localhost:8082
           predicates:
             - Path= /gw/**
           filters:
